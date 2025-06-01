@@ -1,5 +1,4 @@
-# Django Rest Framework Backend Assignment - Order Management System 
-
+# Google OAuth 2.0 Authentication API + Protected End points GET and POST via Django Rest Framework
 This project implements a foundational backend template using Django REST Framework, integrating Google OAuth 2.0 API Authentication and a secure Data Entry & Retrieval API, suitable for an Order Management System framework.
 
 ## Features
@@ -17,15 +16,14 @@ This project implements a foundational backend template using Django REST Framew
 ### Prerequisites
 
 * Python 3.8+
-* pip (Python package installer)
+* Python package installer
 * Git
 
 ### Installation Steps
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-github-repo-link>
-    cd your_project_name
+    git clone https://github.com/Yuvraj-1107-ML/Ywork_Assignment.git
     ```
 2.  **Create a Python virtual environment (highly recommended):**
     ```bash
@@ -40,7 +38,6 @@ This project implements a foundational backend template using Django REST Framew
     * Create a `.env` file in the root directory of the project (`your_project_name/`).
     * Add the following variables, replacing the placeholders with your actual credentials:
         ```
-        DJANGO_SECRET_KEY=your_very_strong_django_secret_key_here
         GOOGLE_OAUTH_CLIENT_ID=your_google_cloud_client_id_here
         GOOGLE_OAUTH_CLIENT_SECRET=your_google_cloud_client_secret_here
         # For PostgreSQL deployment, use your database connection string:
@@ -70,11 +67,6 @@ This project implements a foundational backend template using Django REST Framew
 6.  **Create a Django Superuser (for Django Admin access):**
     ```bash
     python manage.py createsuperuser
-    ```
-
-7.  **Collect Static Files (for production readiness):**
-    ```bash
-    python manage.py collectstatic
     ```
 
 ### Running the Project Locally
