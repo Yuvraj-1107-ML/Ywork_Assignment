@@ -1,4 +1,4 @@
-# Django Backend Assignment - Order Management System Framework
+# Django Rest Framework Backend Assignment - Order Management System 
 
 This project implements a foundational backend template using Django REST Framework, integrating Google OAuth 2.0 API Authentication and a secure Data Entry & Retrieval API, suitable for an Order Management System framework.
 
