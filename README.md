@@ -1,6 +1,8 @@
 # Google OAuth 2.0 Authentication API + Protected End points GET and POST via Django Rest Framework
 This project implements a foundational backend template using Django REST Framework, integrating Google OAuth 2.0 API Authentication and a secure Data Entry & Retrieval API, suitable for an Order Management System framework.
 
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*_rwnCqi-GiSCOXj5RACzew.png" alt="Alt Text" width="600"/>
+
 ## Features
 
 * **Google OAuth 2.0 API Authentication:** Secure user authentication using Google's OAuth 2.0. Users can log in and Access the data using the obtain token
