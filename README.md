@@ -28,21 +28,19 @@ This project implements a foundational backend template using Django REST Framew
 2.  **Create a Python virtual environment (highly recommended):**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows: `venv\Scripts\activate`
+    venv/Scripts/activate or venv/Scripts/activate.bat   
     ```
 3.  **Install project dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-4.  **Set up Environment Variables:**
-    * Create a `.env` file in the root directory of the project (`your_project_name/`).
+4. **Set up Environment Variables:**
+    * Create a `.env` file in the root directory of the project .
     * Add the following variables, replacing the placeholders with your actual credentials:
         ```
         GOOGLE_OAUTH_CLIENT_ID=your_google_cloud_client_id_here
         GOOGLE_OAUTH_CLIENT_SECRET=your_google_cloud_client_secret_here
         ```
-    * **`DJANGO_SECRET_KEY`**: Generate a strong, random string.
-
      * **Google OAuth Credentials**:
         * Go to [Google Cloud Console](https://console.cloud.google.com/).
         * Navigate to "APIs & Services" > "Credentials".
@@ -52,21 +50,15 @@ This project implements a foundational backend template using Django REST Framew
             `https://oauth.pstmn.io/v1/callback`
        
         * Your Client ID and Client Secret will be displayed; use these for `GOOGLE_OAUTH_CLIENT_ID` and `GOOGLE_OAUTH_CLIENT_SECRET`.
-     
-        * Get Access token using Authorization in postman choose Auth 2.0 and fill the required fields hit the post request for the Authentication
-     
-        * Required fields URL :
-          Auth URL : `https://accounts.google.com/o/oauth2/auth`
-          Token URL : `https://accounts.google.com/o/oauth2/token`
                
-6.  **Run Database Migrations:**
+5. **Run Database Migrations:**
     ```bash
     python manage.py makemigrations
     python manage.py migrate
     ```
     
 
-7.  **Create a Django Superuser (for Django Admin access):**
+6. **Create a Django Superuser (for Django Admin access):**
     ```bash
     python manage.py createsuperuser
     ```
@@ -77,16 +69,16 @@ This project implements a foundational backend template using Django REST Framew
 python manage.py runserver
 ```
 
-8.  ** HOW TO RUN THE API :**
+7. **HOW TO RUN THE API :**
    
-   * Get Access token using Authorization in postman choose Auth 2.0 and fill the required fields hit the post request for the Authentication *
+   * Get Access token using Authorization in postman choose Auth 2.0 and fill the required fields hit the post request for the Authentication 
 
    * Required fields URL :
-          Auth URL : `https://accounts.google.com/o/oauth2/auth`
-          Token URL : `https://accounts.google.com/o/oauth2/token`
+      * Auth URL : `https://accounts.google.com/o/oauth2/auth`
+      * Token URL : `https://accounts.google.com/o/oauth2/token`
      
    * After getting the access token hit GET and POST request:
-      POST : `http://localhost:8000/api/items/`
-      GET : `http://localhost:8000/api/items/list`
-      filter : `http://localhost:8000/api/items/list/?title=titlefilter` 
-      * Ensure that you are Using Access token in the header to Fetch and Post the data otherwise it will respond  Unathorized Access 
+      * POST : `http://localhost:8000/api/items/`
+      * GET : `http://localhost:8000/api/items/list`
+      * filter : `http://localhost:8000/api/items/list/?title=titlefilter` 
+   * Ensure that you are Using Access token in the header to Fetch and Post the data otherwise it will respond Unathorized Access 
